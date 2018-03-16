@@ -5,7 +5,7 @@ var express = require('express'),
     urlencodedParser = bodyParser.urlencoded({extended: false});
     
 //For future functionality
-function sendMessageToSlackResponseURL(responseURL, JSONmessage){
+/*function sendMessageToSlackResponseURL(responseURL, JSONmessage){
   var postOptions = {
     uri: responseURL,
     method: 'POST',
@@ -19,7 +19,7 @@ function sendMessageToSlackResponseURL(responseURL, JSONmessage){
       //Nothing here for now
     }
   }
-}
+}*/
 
 app.post('/slack/actions', urlencodedParser, (req, res) =>{
   res.status(200).end();
